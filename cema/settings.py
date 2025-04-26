@@ -158,3 +158,11 @@ REST_FRAMEWORK = {
     ],
     'DEFAULT_FILTER_BACKENDS': ['django_filters.rest_framework.DjangoFilterBackend']
 }
+
+
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_USE_SSL = True
+EMAIL_HOST = 'mail.havenke.com'
+EMAIL_HOST_USER = 'accounts@havenke.com'
+EMAIL_HOST_PASSWORD = 'Musila@01'
+EMAIL_PORT = 465
